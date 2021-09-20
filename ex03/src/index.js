@@ -7,14 +7,14 @@ function function1() {
 
 // Only change code above this line
 function function2() {
-  var result="";
+  var result = "";
 
   if (typeof myGlobalVariable !="undefined") {
-    result+="myGlobalVariable: "+myGlobalVariable;
+    resul t+= "myGlobalVariable: " + myGlobalVariable;
   }
 
-  if (typeof notGlobalVariable !="undefined") {
-    result+=" notGlobalVariable: "+notGlobalVariable;
+  if (typeof notGlobalVariable != "undefined") {
+    result +=" notGlobalVariable: "+ notGlobalVariable;
   }
 
   console.log(result);
@@ -26,6 +26,4 @@ function2();
 module.exports= {
   function1,
   function2
-}
-
-;
+};
