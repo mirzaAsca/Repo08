@@ -1,29 +1,30 @@
-// Only change code below this line
-var myGlobalVariable=10;
 
-function function1() {
-  notGlobalVariable=5;
-}
+    // Only change code below this line
 
-// Only change code above this line
+    var myGlobalVariable = 10;
+
+    function function1() {
+       notGlobalVariable = 5;
+    }
+   
+    // Only change code above this line
+
 function function2() {
   var result = "";
 
-  if (typeof myGlobalVariable !="undefined") {
-    resul t+= "myGlobalVariable: " + myGlobalVariable;
+  if (typeof myGlobalVariable != "undefined") {
+    result += "myGlobalVariable: " + myGlobalVariable;
   }
-
   if (typeof notGlobalVariable != "undefined") {
-    result +=" notGlobalVariable: "+ notGlobalVariable;
+    result += " notGlobalVariable: " + notGlobalVariable;
+  }
+  console.log(result);
   }
 
-  console.log(result);
-}
+  function1();
+  function2();
 
-function1();
-function2();
-
-module.exports= {
-  function1,
-  function2
-};
+  module.exports = {
+    function1,
+    function2
+  };
